@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+	<script>
+// Power Hour video playlist (id, start time)
+var current_hour = [
+//	Disney
+	["IgY6vI_EDbM",	0],
+	["hoUH9b6xHyg",	71],
+	["62qtrR2eCu4",	27],
+	["HJy8kdNNrvI",	0],
+	["HI0x0KYChq4",	52],
+	["xHYvpXe75b8",	64],
+	["3jQIIXuhsC8",	43],
+	["89U_vyP3To0",	50],
+	["XToT1yur4XA",	37],
+	["P618JSRpX2U",	43],
+	["KAuQTZ3Btfk",	25],
+	["XgOCTN14nzA",	54],
+	["DLRKUCXzfHM",	19],
+	["VTkJNetaL9c",	30],
+	["IRsrP_ktr1g",	23],
+	["KATAokMjLis",	12],
+	["H9_a3KaP74E",	89],
+	["tTUZswZHsWQ",	0],
+	["gCGTBjzgWBI",	40],
+	["CLnADKgurvc",	10],
+	["bcUFYQpr-uc",	0],
+	["tTuwo_TqlhQ",	0],
+	["olUShJ1BQv4",	2],
+	["QzvvQ7HOW44",	13],
+	["zPUe7O3ODHQ",	25],
+	["aO0abpVd5UI",	28],
+	["O9MvdMqKvpU",	0],
+	["yg8116aeD7E",	0],
+	["JUq8i_NGytE",	0],
+	["TrRbB-qUJfY",	8],
+	["R8rnMc22AG8",	0],
+	["SbCl6m4gDR0",	12],
+	["ZhHixX-AZl4",	12],
+	["t6Ol7VsZGk4",	10],
+	["Shk0JoGcZ60",	26],
+	["fr4xUhPkywQ",	3],
+	["lHNFowhuwrE",	12],
+	["5P3vp-sOwps",	62],
+	["TVcLIfSC4OE",	0],
+	["yOL-EJZjmp0",	0],
+	["1k1t8zeIA6o",	49],
+	["arHv0Iu4vSA",	0],
+	["mIwa9sPFT5I",	17],
+	["2Kj8Geuxs60",	6],
+	["KA6V6OWohbY",	27],
+	["D-P-aO0PgD0",	83],
+	["gkhOc6iXN6U",	11],
+	["IXGgDIj5KvA",	0],
+	["flBrQ5GT-Kc",	75],
+	["LcxYwwIL5zQ",	4],
+	["f2finUM4Y1Q",	18],
+	["l8UFnc85-xM",	0],
+	["L0MK7qz13bU",	64],
+	["hu39Q647m-4",	34],
+	["pnZbiKKydWU",	2],
+	["XtAKg9HknmY",	17],
+	["fLebq8q1hS4",	25],
+	["4EHpbZ6LHpw",	11],
+	["VuJTqmpBnI0",	58],
+	["y5dpfFfcQ3E",	0]
+];	
+	</script>
+
+	<div class="container">
+
+	<div id="player">
+
+	</div>
+	<progress id="progress" value="0" max="60"></progress>
+
+	<div id="log" onclick="updateLog()"></div>
+	<div id="playlist"></div>
+	</div>
+
+  <script type="text/javascript" src="player.js"></script>
+</body>
+</html>
