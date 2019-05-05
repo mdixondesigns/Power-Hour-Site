@@ -1,13 +1,59 @@
-body {
-	color: gray;
-	background-color: #000;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, Ubuntu, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	padding-top: 40px;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+/* Purple #6d3580 */
+/* Magenta #cc4165 */
+/* Orange #e4734f */
+/* Yellow #ffe26f */
+
+* {
+  box-sizing: border-box;
 }
 
+body {
+	color: rgba(255,255,255,.75);
+	background-color: #222;
+  font-family: "Open Sans", sans-serif;
+}
+h1{
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 60px;
+}
+.byline {
+  font-weight: normal;
+  text-transform: uppercase;
+}
 .container {
+  border: 1px solid white;
 	margin: auto;
-	width: 640px;
+  min-width: 300px;
+	width: 100%;
+}
+
+.flex_grid {
+  display: flex;
+  flex-wrap: wrap
+}
+
+.flex_grid > a {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 1px solid white;
+  flex-grow: 1;
+  margin: 10px;
+  min-height: 150px;
+  min-width: 240px;
+  position: relative;
+}
+
+.flex_grid h3 {
+  background-color: white;
+  margin: 0;
+  padding: 6px 15px;
+  position: absolute;
+  width: 100%;
+
+  bottom: 0;
 }
 
 #player {
@@ -21,7 +67,7 @@ progress {
 }
 
 #log {
-	//border: 2px solid;
+	/*border: 2px solid;*/
 	padding: 0 10px;
 }
 
@@ -47,3 +93,5 @@ progress {
 .ended {
 	color: purple;
 }
+
+
